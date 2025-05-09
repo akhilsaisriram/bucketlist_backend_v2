@@ -13,8 +13,7 @@ from django.conf import settings
 
 from django.utils.timezone import make_aware
 
-AZURE_CONNECTION_STRING = 'BlobEndpoint=https://bucketlistv1.blob.core.windows.net/;QueueEndpoint=https://bucketlistv1.queue.core.windows.net/;FileEndpoint=https://bucketlistv1.file.core.windows.net/;TableEndpoint=https://bucketlistv1.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-05-23T20:23:02Z&st=2025-01-23T12:23:02Z&spr=https&sig=5SryoZQwsdZYTnSbxmsqIK8m7mu6OvkvndkVJl7P8zw%3D'
-# https://bucketlistfeed.blob.core.windows.net/feed?sp=racwdli&st=2024-11-01T12:43:26Z&se=2024-12-31T20:43:26Z&sv=2022-11-02&sr=c&sig=elUtMfr9kGwLxtqu8Py%2F03vbmZwhL9xmFjtOVO%2BFo2U%3D
+AZURE_CONNECTION_STRING = ''
 AZURE_CONTAINER_NAME = 'bucket'
 def upload_media_to_azure(file, blob_name):
     """
