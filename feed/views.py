@@ -11,9 +11,7 @@ from azure.storage.blob import BlobServiceClient, ContentSettings
 
 from django.conf import settings
 
-# AZURE_CONNECTION_STRING = 'BlobEndpoint=https://bucketlistfeed.blob.core.windows.net/;QueueEndpoint=https://bucketlistfeed.queue.core.windows.net/;FileEndpoint=https://bucketlistfeed.file.core.windows.net/;TableEndpoint=https://bucketlistfeed.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=o&sp=rwdlacupiytfx&se=2024-10-31T21:00:19Z&st=2024-10-26T13:00:19Z&spr=https&sig=FbtX%2BscSURkxu%2Fo6lePtxDRdRX9uHtcvbHcOS9Bhe5s%3D'
-AZURE_CONNECTION_STRING = 'BlobEndpoint=https://bucketlistv1.blob.core.windows.net/;QueueEndpoint=https://bucketlistv1.queue.core.windows.net/;FileEndpoint=https://bucketlistv1.file.core.windows.net/;TableEndpoint=https://bucketlistv1.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2025-05-23T20:23:02Z&st=2025-01-23T12:23:02Z&spr=https&sig=5SryoZQwsdZYTnSbxmsqIK8m7mu6OvkvndkVJl7P8zw%3D'
-# https://bucketlistfeed.blob.core.windows.net/feed?sp=racwdli&st=2024-11-01T12:43:26Z&se=2024-12-31T20:43:26Z&sv=2022-11-02&sr=c&sig=elUtMfr9kGwLxtqu8Py%2F03vbmZwhL9xmFjtOVO%2BFo2U%3D
+AZURE_CONNECTION_STRING = ''
 AZURE_CONTAINER_NAME = 'bucket'
 
 def upload_media_to_azure(file, blob_name):
